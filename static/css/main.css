@@ -1,0 +1,113 @@
+html{
+     background: url('http://images.all-free-download.com/images/graphiclarge/old_paper_background_hd_picture_2_169574.jpg') no-repeat center center fixed;
+     background-size: cover;
+ }
+ body {
+     text-align: center;
+     /*position: relative;*/
+ }
+img { 
+	width: 100%;
+     position: absolute;      
+     display: block;
+     margin: auto;}
+ 
+ .text {
+     position: absolute; 
+     left: 50%;
+     transform: translateX(-50%);
+     width: 625px;
+     /*background-color: rgba(255, 0, 0, 0.3)*/
+
+ }   
+
+ h2 {
+     font-family: 'Ewert', serif;
+     font-size: 48px;
+     margin-top: 14px;
+     padding-bottom: 10px;
+     border-bottom: solid 3px;
+     overflow: hidden;
+     width: 100%
+ }
+ h3 {
+     margin-top: 10px;
+     font-family: 'Old Standard TT', serif;
+     font-size: 40px
+
+ }
+ p:before,
+ p:after {
+     display: inline-block;
+     position: relative;
+     vertical-align: center;
+     height: 3px;
+     content: '';
+     background: black;
+     width: 50%;
+ }
+ p:before {
+     margin-left: -50%;
+     left: -.5em;
+     bottom: 5px
+ }
+ p:after {
+     margin-right: -50%;
+     right: -.5em;
+     bottom: 5px
+ }
+ p {
+     font-family: 'Old Standard TT', serif;
+     font-size: 24px;
+     margin-bottom: -15px;
+ }
+
+#container {
+ 	position: relative;
+
+     /*background-color: rgba(0, 255, 0, 0.3);*/
+     
+     height: 500px  ;
+     width: 1000px;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 0;
+     /*display: inline;*/
+ }
+#banjo {
+ 	top: 80px;
+ 	
+ 	opacity: .3;
+ 	transform: scale(.6, .6) rotate(90deg);	
+ }
+
+ #redynamize {
+ 	transform: scale(.29, .27);
+ 	opacity: .5  
+     top: 285px;
+     right: 3px;
+ }
+
+ #circle {
+ 	border-radius: 50%;
+ 	height: 125px;
+ 	width: 125px;
+     top: 300px;
+ 	
+ 	border: none !important;
+     position: relative
+ 	
+ }
+ 
+ #reload {
+ 	opacity: 0;
+ 	transform: scale(.255, .25) rotate(-16deg);
+
+ 	
+ }
+
+#circle:hover #reload {
+	opacity: 1;
+	transition: .7s ease
+}
+
