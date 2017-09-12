@@ -4,7 +4,7 @@ html{
  }
  body {
      text-align: center;
-     /*position: relative;*/
+padding-top: 20px
  }
 img { 
 	width: 100%;
@@ -18,22 +18,41 @@ img {
      transform: translateX(-50%);
      width: 625px;
      /*background-color: rgba(255, 0, 0, 0.3)*/
+     margin-bottom: 0px;
+}
+.title {
+     position: absolute;
+     top: 210px;
+     height: 160px;
+     /*line-height: 80px*/
+     left: 50%;
+     transform: translateX(-50%);
+     width: 625px;
+     /*background-color: rgba(0, 255, 0, 0.3);*/
+     display: table;
+}
 
- }   
+.title h3 {
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+}
 
  h2 {
      font-family: 'Ewert', serif;
      font-size: 48px;
      margin-top: 14px;
      padding-bottom: 10px;
-     border-bottom: solid 3px;
+     border-bottom: solid 4px;
      overflow: hidden;
      width: 100%
  }
+
  h3 {
      margin-top: 10px;
      font-family: 'Old Standard TT', serif;
-     font-size: 40px
+     font-size: 50px;
+     /*background-color: blue*/
 
  }
  p:before,
@@ -75,39 +94,46 @@ img {
      /*display: inline;*/
  }
 #banjo {
- 	top: 80px;
+ 	top: 75px;
  	
  	opacity: .3;
  	transform: scale(.6, .6) rotate(90deg);	
  }
 
  #redynamize {
- 	transform: scale(.29, .27);
- 	opacity: .5  
-     top: 285px;
-     right: 3px;
+ 	transform: scale(1.7, 1.7
+          );
+ 	opacity: 0;
+     top: 140px;
+     right: 5px;
  }
 
  #circle {
  	border-radius: 50%;
- 	height: 125px;
- 	width: 125px;
-     top: 300px;
- 	
+ 	height: 165px;
+ 	width: 165px;
+     top: 345px;
+ 	background: transparent;
  	border: none !important;
      position: relative
  	
  }
  
  #reload {
- 	opacity: 0;
- 	transform: scale(.255, .25) rotate(-16deg);
+ 	/*opacity: .3;*/
+ 	transform: scale(1.02, 1) rotate(-16deg);
+     top: 10px;
+     right: -4px;
 
  	
  }
 
-#circle:hover #reload {
+#circle:hover #reload  {
 	opacity: 1;
 	transition: .7s ease
 }
 
+#circle:hover #redynamize  {
+     opacity: 1;
+     transition: .7s ease
+}
