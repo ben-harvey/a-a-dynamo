@@ -4,7 +4,7 @@ html{
  }
  body {
      text-align: center;
-padding-top: 20px
+padding-top: 15px;
  }
 img { 
 	width: 100%;
@@ -22,7 +22,7 @@ img {
 }
 .title {
      position: absolute;
-     top: 210px;
+     top: 205px;
      height: 160px;
      /*line-height: 80px*/
      left: 50%;
