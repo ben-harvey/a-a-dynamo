@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appalachian Appelation Dynamo</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/main.css') }}">
+
+    
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old+Standard+TT&effect=destruction">
+    <link href="https://fonts.googleapis.com/css?family=Ewert&effect=destruction" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class='text'>
+        <p class="font-effect-destruction">THE AMAZING</p>
+        <h2     class="font-effect-destruction">Appalachian <br/ >Appelation Dynamo!</h2>
+     </div>
+    
+     <div class='title'>   
+        <h3 class="font-effect-destruction">{{title}}</h3>
+    </div>  
+    
+    <div id='container'>
+        <img id='banjo' class="font-effect-destruction" src="{{ url_for('static', filename='banjo2.png') }}" >       
+        
+        <button id='circle' onclick='window.location.reload()'>
+            <img id='redynamize' class="font-effect-destruction" src="{{ url_for('static', filename='redynamize.png') }}" > 
+            <img id='reload' class='font-effect-destruction' src="{{ url_for('static', filename='reload.png') }}">
+        </button>
+    </div>
+    <!-- <script type=text/javascript src="{{ 
+    url_for('static', filename='jquery.js') }}"></script>
+    <script type="text/javascript">
+     $(document).ready(function() {
+        $('button').mouseenter(function() {
+            $('#reload, #redynamize').css('opacity', '1')
+        });
+        $('button').mouseleave(function() {
+            $('#reload, #redynamize').css('opacity', '.3')
+        });  
+     });   
+
+    </script> -->
+
+</body>
+ 
+
+
+</html>
